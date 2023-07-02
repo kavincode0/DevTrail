@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Job Application</h1>
+    <form>
+    <label for="Name">Name: </label>
+    <br>
+    <input type="text" id="Name">
+    <br>
+    <label for="email">Email: </label>
+    <br>
+    <input type="email" for="email">
+    <br>
+    <label for="phone">Phone: </label>
+    <br>
+    <input type="tel" id="phone">
+    <br>
+    <label for="resume">Resume: </label>
+    <br>
+    <input type="file" id="resume">
+    <br>
+    <label for="exp">Experience(years): </label>
+    <br>
+    <input type="number" min="0" max="50">
+    <br>
+    <fieldset style="display: inline;">
+        <legend>Skills
+        </legend>
+        <input type="checkbox" value="html">HTML
+        <input type="checkbox" value="css">CSS
+        <input type="checkbox" value="js">Javascript
+    </fieldset>
+    <br>
+    <label for="education
+    ">Qualification: </label>
+    <br>
+    <select name="education" id="education">
+        <option value="HighSchool">High School</option>
+        <option value="bachelor">Bachelor's</option>
+        <option value="master">Master's</option>
+    </select>
+    <br>
+    <label for="availability">Availability: </label>
+    <br>
+    <input type="radio" id="availability" name="available" value="parttime">Part-time
+    <br>
+    <input type="radio" id="availability" name="available" value="fulltime">Full-time
+    <br>
+    <label for="comments">Additional Comments:</label>
+    <br>
+    <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+<input type="submit" value="Submit Application">
+</body>
+</html>
