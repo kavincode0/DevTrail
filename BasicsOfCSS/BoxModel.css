@@ -1,0 +1,33 @@
+/* p{
+    background-color: yellow;
+    width: 100px;
+    height: 100;/*These properties cannot be used in case of span tag(inline element), used only for modifiying text in a block with dimesions, itself is dimesionless./
+    padding: 30px;
+}
+.p1/*class/{
+     background-color: blue;
+     border: solid 3px indigo;
+     border-radius: 10px;
+}
+#p3/*id>class/{
+    background-color: chartreuse;
+}
+h1{
+    box-sizing: border-box;
+    border: solid black 5px;
+    height: 120px;
+    width: 120px;
+    padding: 20px;
+} */
+
+h1{
+    background-color: rgb(123, 230, 17);
+    color: rgba(96, 25, 163, 0.932);
+    border: 5px dashed white;
+    box-sizing: border-box;
+    padding: 150px;
+    margin: auto;
+    margin-top: 95px;
+    border-radius: 20px;
+    width: 400px;
+}
