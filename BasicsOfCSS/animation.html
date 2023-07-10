@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+.container{
+     border: 15px solid black;
+     width: 100vw;
+     height: 100vh;
+    box-sizing: border-box;
+    background-color: bisque;
+}
+#b1{
+   width: 150px;
+   height: 20px;
+   background-color: rgb(116, 39, 188);
+   border: 1px solid gold;
+   margin: 4px;
+   position: relative;
+   animation-name: topMovement;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+   animation-delay: 1s;
+   animation-timing-function: linear;
+   animation-direction: alternate;
+}
+@keyframes topMovement {
+    from{
+       top: 0;
+       left: 0;
+    }
+    to{
+      top: 0;
+      left: 1080px;
+    }
+}
+#b2{
+   width: 150px;
+   height: 20px;
+   background-color: rgb(116, 39, 188);
+   border: 1px solid gold;
+   margin: 4px;
+   position: relative;
+   animation-name: bottomMovement;
+   animation-duration: 3s;
+   animation-delay: 1s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+   animation-direction: alternate;
+}
+@keyframes bottomMovement {
+    from{
+       top: 520px;
+       left: 0;
+    }
+    to{
+      top: 520px;
+      left: 1080px;
+    }
+}
+#c{
+   /* @keyframes duration | easing-function | delay | iteration-count 
+   | direction | fill-mode | play-state | name */
+   width: 50px;
+   height: 50px;
+   border-radius: 25px;
+   background-color: purple;
+   margin: 5px;
+   position: relative;
+   top:300px;
+   left: 530px;
+   animation: 10s linear 1s infinite alternate none running circle;
+}
+@keyframes circle{
+    0%{
+         top: 30px;
+         left: 10px;
+    }
+    30%{ 
+        top: 490px;
+        left: 1000px;
+    }
+    60%{
+        top: 30px;
+        left: 1000px;
+    }
+    100%{
+         top: 490px;
+         left: 0px;
+    }
+}
+</style>
+<body>
+    <div class="container">
+         <div id="b1"></div>
+         <div id="c"></div>
+         <div id="b2"></div>
+    </div>
+</body>
+</html>
