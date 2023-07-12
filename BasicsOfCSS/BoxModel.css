@@ -30,4 +30,15 @@ h1{
     margin-top: 95px;
     border-radius: 20px;
     width: 400px;
+    transition-property: all;
+    transition-duration: 5s;
+    transition-timing-function: linear;
 }
+h1:hover{
+    /* transform: rotate(-360deg); */
+    /* transform: scale(2); */
+    /* transform: skew(90deg) */
+    /* transform: translateY(-45px); */
+    transform: matrix(2, 1.2, 0, 0.0, 0, 0);
+}
+s
