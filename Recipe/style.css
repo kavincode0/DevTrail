@@ -4,10 +4,13 @@
     box-sizing: border-box;
 }
 .container{
-    width: 100vw;
+    width: 50%;
     margin: auto;
     border: 2px solid green;
     background-color: azure;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
 }
 .navcontainer{
     min-height: 70px;
@@ -53,4 +56,24 @@ a{
 .item{
     display: flex;
     gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+.rightbox {
+    height: 400px;
+    
+}
+.rightbox img{
+    width: 200px;
+    height: 300px;
+    padding-top: 100px;
+    border-radius: 10px;
+}
+.leftbox{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.leftbox h2{
+    font-size: 2rem;
 }
