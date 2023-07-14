@@ -16,7 +16,7 @@
 }
 .navcontainer{
     min-height: 70px;
-    width: 100vw;
+    width: 100%;
 background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
     display: flex;
     justify-content: center;
@@ -62,18 +62,20 @@ a{
     justify-content: space-around;
     align-items: center;
 }
-.rightbox {
-    height: 400px;
-    
+
+.rightbox{
+    position: relative;
 }
 .rightbox img{
     width: 200px;
     height: 200px;
     /* padding-top: 100px; */
-    border-radius: 10px;
+    border-radius: 20px;
     transition: all 0.5s ease;
+    box-shadow: 0px 0px 10px green;
+    
 }
-.rightbox img:hover{
+.rightbox:hover img{
     transform: scale(1.1);
 }
 .leftbox{
@@ -89,4 +91,26 @@ a{
 }
 .recipebox{
 font-size: 1.2rem;
+}
+.rightbox .overlay{
+    position: absolute;
+    top: -9px;
+    left: -9px;
+    height: 108%;
+    width: 109%;
+    background-color: rgba(149, 159, 150, 0.504);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+}
+.rightbox .overlay span{
+    color: aliceblue;
+    font-size: 1.2rem;
+    background-color: rgba(72, 175, 3, 0.684);
+}
+.rightbox:hover .overlay{
+    opacity: 100%;
 }
