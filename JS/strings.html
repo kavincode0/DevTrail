@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+ var a = 3;
+ var b = "hello hi hi";
+ console.log(b);
+
+//  String functions
+// First Occurence of a substring
+var position = b.indexOf("hi");
+console.log(position);
+
+//last Occurence of a substring 
+ position = b.lastIndexOf("hi");
+console.log(position);
+
+// substring from a string, slice: takes -ve and +ve values; substring: only takes +ve values  
+ var sub = b.slice(0,4);
+ console.log(sub);
+// substr(start, length)
+ var sublength = b.substr(2, 5);
+ console.log(sublength);
+// str.replace('hi', hallo)
+// str.toUpperCase();
+// str.toLowerCase();
+// str.trim(){whitespaces}
+// str.charAt(2)
+// str.charCodeAt(2){utfc code of character}
+</script>
+<body>
+    <h1>Learning JS</h1>
+<em>Open the browser console to see:)</em>
+    <p>topics: variables, strings</p>
+</body>
+</html>
