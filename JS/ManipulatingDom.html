@@ -5,10 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manipulating DOM</title>
 </head>
-<script>
-    
-</script>
 <body>
-    
+</div id = "main" class = "A">
+   <ul id = "hello">
+    <li>Yes</li>
+    <li>No</li>
+  </ul>
+<div>
 </body>
+<script>
+    let main = document.getElementById('hello'); 
+    console.log(main);
+    let container = document.getElementsByClassName('A');
+    console.log(container);
+
+    let sel = document.querySelectorAll('#hello>li');
+    console.log("Selector returns", sel);
+    sel[0].innerHTML = "zero";
+</script>
 </html>

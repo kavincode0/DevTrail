@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Browser events:
+    click
+    contextmenu
+    mouseover/mousevent 
+    submit 
+    focus 
+     -->
+     <div>
+<h1>This is heading</h1>
+     </div>
+     <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aliquam dignissimos enim voluptatem voluptates. Necessitatibus est, vel facere saepe modi quisquam praesentium molestiae quae sapiente incidunt magni illum id impedit?</p>
+     <button id ="btn" value="submit" onclick="hide()">Submit</button>
+</body>
+<style>
+    button{
+        color: black;
+        /* font-family: 'Courier New', Courier, monospace; */
+        font-style: bold;
+        box-shadow: 1px 1px 10px 3px rgb(58, 57, 57);
+        border: 1px solid black;
+        width: 80px;
+        height: 30px;
+        background-color: red;
+        transition: all 1s 0s none;
+    }
+    button:hover{
+        width: 82px;
+        height: 32px;
+    }
+</style>
+<script>
+    function hide(){
+     let btn = document.getElementById('btn');
+     let para = document.getElementById('para');
+     if(para.style.display != 'none'){
+        para.style.display = 'none';
+     }
+     else{
+        para.style.display = 'block'
+     }
+
+     para.addEventListener('mouseover', function run(){
+        console.log('Mouse Inside');
+     });
+     para.addEventListener('mouseout', function run(){
+        console.log('Mouse Outside');
+     });
+    }
+</script>
+</html>
