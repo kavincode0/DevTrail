@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doc</title>
+</head>
+<script>
+  let greet = ()=> {
+       console.log("Good mornin");
+    }
+greet();
+ sumiii = (a,b) => {
+    return a+b;
+ }
+ sumiii();
+
+let obj = {
+    greet: "ello",
+    name: ["A", "B", "C"],
+    yayy(){
+    this.name.forEach((student)=>{
+        console.log(student + this.greet); //remove this u will see calling outside the function
+    });
+ }
+}
+obj.yayy();
+</script>
+<body>
+    <h1>Arrow and lexical this</h1>
+</body>
+</html>

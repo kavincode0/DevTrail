@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json</title>
+</head>
+<script>
+    let jsonObj = {
+       name: "nothing",
+       channel: "Mr. Beast",
+       friend: "karl",
+       food: "feastables"
+    }
+    console.log(jsonObj);
+    let myJsonStr = JSON.stringify(jsonObj);
+    console.log(myJsonStr);
+
+    myJsonStr = myJsonStr.replace('nothing', 'something');
+    console.log(myJsonStr);
+  
+    newJsonObj = JSON.parse(myJsonStr);
+    console.log(newJsonObj);
+</script>
+<body>
+    <pre>
+      <h1>This is Json</h1>
+     stringify: object to json string
+     parse: string to Object
+    Json file is transmitted over a network
+    </pre>
+</body>
+</html>
