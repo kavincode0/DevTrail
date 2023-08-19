@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>New Doc</title>
+</head>
+<body>
+    <h1>setTimeout and setInterval ⌚</h1>
+    <div>
+        <h2><span id = "time"></span></h2>
+    </div>
+</body>
+<script>
+  function greet(name, Text){
+    console.log("Hello "+ name + " I'm here after 5secs "+ Text);
+  }
+//   timeOut = setTimeout(greet, 5000, "Kav", "Take Care");
+//   clearTimeout(timeOut); will clear the timeout
+//   console.log(timeOut); 
+// setInterval(greet, 4000, "kav", "Best"); repeats the message
+// clearInterval(intervalname)
+
+function displayTime(){
+    time = new Date();
+    // console.log(time);
+    document.getElementById('time').innerHTML = time;
+}
+ setInterval(displayTime, 1000);
+</script>
+</html>
