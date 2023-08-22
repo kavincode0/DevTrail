@@ -1,0 +1,14 @@
+{
+  "name": "kavincode",
+  "version": "1.0.0",
+  "description": "I just started with Express and Postman",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kav",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
