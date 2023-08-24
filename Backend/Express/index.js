@@ -1,1 +1,0 @@
-console.log("It's 2 a.m.");

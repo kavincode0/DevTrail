@@ -1,8 +1,10 @@
 const express = require("express");
 const app = express();
 const port = 80;
+
+app.use('/static', express.static('static'))
 app.get("/", (req, res)=>{
-    res.send("First app Express")
+    res.send("First app1 Express")
 });
 app.get("/about", (req, res)=>{
     res.send("This is about page of first app");
