@@ -30,10 +30,10 @@ body{
     background-repeat: no-repeat;
     /* background-attachment: fixed; */
 }
-.box{
+#contact{
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: auto;
     height: 400px;
     margin: 30px;
     justify-content: center;
@@ -49,10 +49,11 @@ legend{
     border: 0px;
     background-color: white;
 }
-button{
+.btn{
     background-color: rgb(246, 44, 44);
     border: 2px solid black;
     width: 70px;
     height: 40px;
     color: wheat;
+    cursor: pointer;
 }
