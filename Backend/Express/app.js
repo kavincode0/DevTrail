@@ -1,8 +1,21 @@
 const express = require("express");
+const path = require("path");
 const app = express();
 const port = 80;
 
-app.use('/static', express.static('static'))
+//for serving static files
+app.use('/static', express.static('static')) 
+
+//set the template engine as pug
+app.set('view engine', 'pug') 
+
+//set the view directory for keeping pug
+app.set('views', path.join(__dirname, 'views'))
+
+// demo.pug endpoint for title and message
+app.get("/demo", (req, res)=>{
+    res.status(200).render('demo', {title:"Hey", message:'hello there'});
+});
 app.get("/", (req, res)=>{
     res.send("First app1 Express")
 });

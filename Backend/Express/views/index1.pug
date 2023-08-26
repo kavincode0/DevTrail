@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#{title}</title>
+    style 
+     include ../static/style.css 
+</head>
+<body>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/">About</a></li>
+    <li><a href="/">Contact</a></li>
+  </ul>
+  
+   <div class = "head">
+    <div class = "element">
+    <h1>Random Gym</h1>
+    | #{content}
+    | <!-- running html on pug -->
+    </div>
+   </div>
+   <div class = "box">
+      <input type="text" name="name" id="name" placeholder="Enter Name" class="flex-item">
+      <input type="number" name="age" id="age" placeholder="Enter Age" class="flex-item">
+      
+      <legend class="flex-item">
+        <label for="gender">Gender</label>
+        <input type="radio" value="female" name="gender" id="gender">Female
+        <input type="radio" value="male" name="gender" id="gender">Male
+      </legend>
+     
+      <textarea name="address" id="address" cols="30" rows="10" placeholder="Enter address" class="flex-item"></textarea>
+      <textarea name="about" id="about" cols="30" rows="10" placeholder="Enter about yourself" class="flex-item"></textarea>
+      <button type="button" class="btn btn-danger" value="submit">Submit</button>
+   </div>
+</body>
+</html>

@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    background-color: gray;
+}
+li{
+    padding: 15px;
+    margin: 2px
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+}
+.head{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.801);
+    justify-content: center;
+    align-items: center;
+}
+body{
+    background-image: url(https://media.giphy.com/media/fiq7TCeqgnZza/giphy.gif);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 400px;
+    margin: 30px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.flex-item{
+    margin: 10px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+legend{
+    border: 0px;
+    background-color: white;
+}
+button{
+    background-color: rgb(246, 44, 44);
+    border: 2px solid black;
+    width: 70px;
+    height: 40px;
+    color: wheat;
+}
