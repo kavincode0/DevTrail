@@ -17,11 +17,15 @@ app.get('/', (req, res)=>{
     // const params = {'title':""}
  res.status(200).render('home.pug');
 })
-app.post('/', (req, res)=>{
-    console.log(req.body)
-    // const params = {}
-    res.status(200).render('index.pug');
+app.get('/contact', (req, res)=>{
+    // const params = {'title':""}
+ res.status(200).render('contact.pug');
 })
+// app.post('/', (req, res)=>{
+//     console.log(req.body)
+//     // const params = {}
+//     res.status(200).render('index.pug');
+// })
 
 app.listen(port, ()=>{
     console.log(`The application started successfully on port ${port}`)
