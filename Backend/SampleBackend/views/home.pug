@@ -1,0 +1,40 @@
+extends base.pug
+
+block scripts
+    script(src='/static/index.js')
+
+block style 
+    style 
+        include ../static/style.css
+
+block content 
+    nav#navbar 
+     ul
+        img(src="https://1001freedownloads.s3.amazonaws.com/vector/thumb/315528/0c0fab41f25eeb56b738d2d93e42a4b9-clean-black-flower-plants.png", alt="" width="20px" height="20px")
+        li #[a(href ="/") Home] 
+        li #[a(href ="/") About]
+        li #[a(href ="/") Services]
+        li #[a(href ="/") Contact Us]
+    section#intro
+        h1 This is a Sample
+        p websites4u
+    section#mission
+        h1 Our Mission 
+        div.container 
+            div#boxes
+                img(src="https://1001freedownloads.s3.amazonaws.com/vector/thumb/315528/0c0fab41f25eeb56b738d2d93e42a4b9-clean-black-flower-plants.png", alt="img" width="50px" height="50px")
+                h4 Sample1
+                br
+                p Creating     
+            div#boxes
+                img(src="https://1001freedownloads.s3.amazonaws.com/vector/thumb/315528/0c0fab41f25eeb56b738d2d93e42a4b9-clean-black-flower-plants.png", alt="" width="50px" height="50px")
+                h4 Sample2   
+                br
+                p Destroying 
+            div#boxes
+                img(src="https://1001freedownloads.s3.amazonaws.com/vector/thumb/315528/0c0fab41f25eeb56b738d2d93e42a4b9-clean-black-flower-plants.png", alt="" width="50px" height="50px")
+                h4 Sample3 
+                br  
+                p Recreating 
+    section#sponsor 
+        h1 Sponsors 
