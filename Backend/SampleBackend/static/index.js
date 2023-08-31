@@ -11,11 +11,11 @@ const server = http.createServer((req, res) => {
     url = req.url;
 
  res.statusCode = 200;
- res.setHeader('Content-Type', 'text/pug');
+ res.setHeader('Content-Type', 'pug');
  if(url == '/'){
     res.end(home);
  }
-else if(url == '/contact')
+else if(url == "/contact")
 res.end(contact);
 else{
     res.statusCode = 404;
