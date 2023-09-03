@@ -9,3 +9,6 @@ db.items.find({rating: {$gt: 3.5}})
 // And operator
 db.items.find({rating: {$gt/$lt: 3.5}, price: {$gt: 4000}})
 
+db.items.find({
+    $or: [{rating: {$lt: 3.5}}, {price:{$gt: 114000}}]
+})
