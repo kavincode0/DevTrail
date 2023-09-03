@@ -5,19 +5,18 @@ const app = express();
 const mongoose = require("mongoose");
 const port = 80
 
-async function main() {
-    await mongoose.connect('mongodb://127.0.0.1:27017/contactData');
-
-//   defining schema
-    const ContactS = new mongoose.Schema({
-        name: String,
-        phone: String,
-        email: String,
-        address: String,
-        desc: String
-    })
-
-    const Contact = mongoose.model('Contact', ContactS);
+    mongoose.connect('mongodb://127.0.0.1:27017/contactData');
+    
+    //   defining schema
+  const contactSchema = new mongoose.Schema({
+  name: String,
+  phone: String,
+    email: String,
+    address: String,
+    desc: String
+  })
+  
+  const Contact = mongoose.model('Contact', contactSchema);
 
 
 // Express specific
@@ -51,7 +50,6 @@ app.post('/contact', (req, res)=>{
 //     // const params = {}
 //     res.status(200).render('index.pug');
 // })
-}
 app.listen(port, ()=>{
-    console.log(`The application started successfully on port ${port}`)
-}) 
+  console.log(`The application started successfully on port ${port}`) 
+})
