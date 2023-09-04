@@ -39,7 +39,7 @@ app.get('/contact', (req, res)=>{
 app.post('/contact', (req, res)=>{
   var mydata = new Contact(req.body);
   mydata.save().then(() =>{
-    res.send("your details have been accepted")
+    res.send("<h1>your details have been accepted</h1>")
   }).catch(()=>{
     res.status(400).send("Sorry, something went wrong, resubmit")
   });
