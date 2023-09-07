@@ -1,4 +1,4 @@
-// Searching for data in mango db
+// Searching for data in mango database
 use kart 
 
 // This query will return all the objects with rating equal to 3.5
