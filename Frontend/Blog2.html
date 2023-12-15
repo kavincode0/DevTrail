@@ -27,7 +27,7 @@
                 <div class="card_footer_container">
                      <div class="author_info_container">
                         <div class="auth_avatar">
-                            <img src="https://miro.medium.com/v2/resize:fit:2400/1*NdgmToqlP3Fk5_1Bpi5zhg.png" alt="" loading="lazy">
+                            <img src="https://miro.medium.com/v2/resize:fit:2400/1*NdgmToqlP3Fk5_1Bpi5zhg.png" alt="" loading="lazy" height="40px" width="39px">
                         </div>
                         <div class="auth_info">
                             <span>
@@ -71,4 +71,108 @@ body{
 a{
     text-decoration: none;
 }
+
+.header_container{
+    margin-bottom: 2.5rem;
+}
+
+.header_title{
+    margin-bottom: .5rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.header_desc{
+    text-align: center;
+    font-family: cursive;
+    max-width: 100%;
+}
+
+.main_container{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.card_container{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(108, 107, 107);
+    border-radius: 10px;
+}
+
+.card_img_container{
+    position: relative;
+    overflow: hidden;
+    height: 15rem;
+}
+
+.card_img{
+    /* optional adjust object-fit and object-position */
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    height: 180%;
+    width: 100%;
+}
+
+.card_title_container{
+    flex: column;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+.card_container:hover .card_img{
+    transform: scale(1.1);
+    transition-duration: 200ms;
+}
+
+.card_title{
+    font-size: 1rem;
+    color: black;
+    font-weight: 600;
+    line-height: 1.5rem;
+    margin-bottom: 0.3rem;
+}
+
+a:hover .card_title{
+    color: rgb(106, 106, 215);
+}
+
+.card_desc{
+    color: rgb(69, 65, 65);
+    font-size: 1rem;
+}
+
+.card_footer_container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.author_info_container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.auth_avatar{
+    height: 2.5rem;
+    width: 2.5rem;
+    overflow: hidden;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: rgb(203, 203, 203);
+}
+
+.auth_info{
+    display: flex;
+    flex-direction: column;
+}
+
+.auth_info:nth-child(1){
+    
+}
+
 </style>
