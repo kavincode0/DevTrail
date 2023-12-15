@@ -29,41 +29,158 @@
                 </div>
             </div>
         </div>
+        <div class="item">
+            <div class="image">
+                <img src="https://i.pinimg.com/originals/90/dc/f8/90dcf8a32508dc12f485ffb2cd35b36b.jpg" alt="">
+            </div>
+            <h4>New Gadgets</h4>
+            <p>Checkout the latest gadgets hitting the markets, from smartphones to smartwatches</p>
+            <div class="author">
+                <div class="item1">
+                    <img src="https://th.bing.com/th/id/OIP.-aIpdqkRLFeVyBWw_WVqDgHaHa?w=500&h=500&rs=1&pid=ImgDetMain" alt="img here">
+                </div>
+                <div class="item2">
+                    <p><b>John Doe</b></p>
+                    <p>12 September, 2023</p>
+                </div>
+                <div class="item3">
+                    <p>Technology</p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="image">
+                <img src="https://i.pinimg.com/originals/90/dc/f8/90dcf8a32508dc12f485ffb2cd35b36b.jpg" alt="">
+            </div>
+            <h4>New Gadgets</h4>
+            <p>Checkout the latest gadgets hitting the markets, from smartphones to smartwatches</p>
+            <div class="author">
+                <div class="item1">
+                    <img src="https://th.bing.com/th/id/OIP.-aIpdqkRLFeVyBWw_WVqDgHaHa?w=500&h=500&rs=1&pid=ImgDetMain" alt="img here">
+                </div>
+                <div class="item2">
+                    <p><b>John Doe</b></p>
+                    <p>12 September, 2023</p>
+                </div>
+                <div class="item3">
+                    <p>Technology</p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="image">
+                <img src="https://i.pinimg.com/originals/90/dc/f8/90dcf8a32508dc12f485ffb2cd35b36b.jpg" alt="">
+            </div>
+            <h4>New Gadgets</h4>
+            <p>Checkout the latest gadgets hitting the markets, from smartphones to smartwatches</p>
+            <div class="author">
+                <div class="item1">
+                    <img src="https://th.bing.com/th/id/OIP.-aIpdqkRLFeVyBWw_WVqDgHaHa?w=500&h=500&rs=1&pid=ImgDetMain" alt="img here">
+                </div>
+                <div class="item2">
+                    <p><b>John Doe</b></p>
+                    <p>12 September, 2023</p>
+                </div>
+                <div class="item3">
+                    <p>Technology</p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="image">
+                <img src="https://i.pinimg.com/originals/90/dc/f8/90dcf8a32508dc12f485ffb2cd35b36b.jpg" alt="">
+            </div>
+            <h4>New Gadgets</h4>
+            <p>Checkout the latest gadgets hitting the markets, from smartphones to smartwatches</p>
+            <div class="author">
+                <div class="item1">
+                    <img src="https://th.bing.com/th/id/OIP.-aIpdqkRLFeVyBWw_WVqDgHaHa?w=500&h=500&rs=1&pid=ImgDetMain" alt="img here">
+                </div>
+                <div class="item2">
+                    <p><b>John Doe</b></p>
+                    <p>12 September, 2023</p>
+                </div>
+                <div class="item3">
+                    <p>Technology</p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="image">
+                <img src="https://i.pinimg.com/originals/90/dc/f8/90dcf8a32508dc12f485ffb2cd35b36b.jpg" alt="">
+            </div>
+            <h4>New Gadgets</h4>
+            <p>Checkout the latest gadgets hitting the markets, from smartphones to smartwatches</p>
+            <div class="author">
+                <div class="item1">
+                    <img src="https://th.bing.com/th/id/OIP.-aIpdqkRLFeVyBWw_WVqDgHaHa?w=500&h=500&rs=1&pid=ImgDetMain" alt="img here">
+                </div>
+                <div class="item2">
+                    <p><b>John Doe</b></p>
+                    <p>12 September, 2023</p>
+                </div>
+                <div class="item3">
+                    <p>Technology</p>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
 
 <style>
+h1{
+    text-align: center;
+}
+p{
+    text-align: center;
+    font-size: 0.8em;
+}
+
 *{
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
 }
 body{
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
 }
 .container{
     display: grid;
     height: 100%;
     width: 100%;
     padding: 20px;
-    border: 2px solid black;
-    
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: repeat(3, 250px);
+    gap: 1rem;
+   justify-content: center;
+   align-items: center;
 }
+
 .item{
-    
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
 }
 .image{
-    /* border: 2px solid black; */
+
 }
 .image img{
-    width: 175px;
-    height: 150px;
-    border: 2px solid black;
+    width: 250px;
+    height: 110px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
 }
 .item1 img{
     width: 20px;
     height: 20px;
+}
+.author{
+    display: flex;
+    justify-content: flex-start;
 }
 </style>
