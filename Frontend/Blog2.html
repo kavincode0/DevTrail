@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ACN</title>
 </head>
 <body>
     <div class="container">
@@ -325,6 +325,22 @@ a{
     grid-template-rows: repeat(2, 1fr);
 }
 
+@media (min-width: 650px){
+    .main_container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 1080px){
+    .main_container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (min-width: 1340px){
+    .main_container{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
 .card_container{
     display: flex;
     flex-direction: column;
@@ -427,22 +443,6 @@ span:nth-child(2){
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-@media (min-width: 650px){
-    .main_container{
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-@media (min-width: 1080px){
-    .main_container{
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-@media (min-width: 1340px){
-    .main_container{
-        grid-template-columns: repeat(4, 1fr);
-    }
 }
 
 </style>
