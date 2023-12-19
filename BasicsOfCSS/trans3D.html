@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D transforms</title>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="RotateX">RotateX</div>
+        <div class="item" id="RotateY">RotateY</div>
+        <div class="item" id="RotateZ">RotateZ</div>
+        <div class="item" id="TranslateX">TranslateX</div>
+        <div class="item" id="TranslateY">TranslateY</div>
+        <div class="item" id="TranslateZ">TranslateZ</div>
+        <div class="item" id="ScaleX">ScaleX</div>
+        <div class="item" id="ScaleY">ScaleY</div>
+        <div class="item" id="ScaleZ">ScaleZ</div>
+    </div>
+</body>
+</html>
+
+<style>
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    padding: 4rem;
+}
+.item{
+    padding: 2rem;
+    height: 250px;
+    width: 250px;
+    background: #FFE000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #799F0C, #FFE000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #799F0C, #FFE000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: 2px solid rgb(212, 212, 0);
+    padding: 2rem;
+    color: rgba(226,255,172,1);
+    font-size: 2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-self: center;
+}
+.container{
+    background-image: linear-gradient( 184.1deg,  rgba(249,255,182,1) 44.7%, rgba(226,255,172,1) 67.2% );
+    display: grid;
+    gap: 7rem;
+    grid-template-columns:repeat(auto-fit, minmax(200px, 400px));
+    justify-content: center;
+    padding: 10rem;
+}
+
+#RotateX:hover{
+    transform: rotateX(89deg);
+}
+#RotateY:hover{
+    transform: rotateY(89deg);
+}
+#RotateZ:hover{
+    transform: rotateZ(89deg);
+}
+#TranslateX:hover{
+    transform: translateX(100px);
+}
+#TranslateY:hover{
+    transform: translateY(100px);
+}
+#TranslateZ:hover{
+    transform: perspective(300px) translateZ(-100px);
+}
+#ScaleX:hover{
+    transform: scaleX(1.5);
+}
+#ScaleY:hover{
+    transform: scaleY(1.5);
+}
+#ScaleZ:hover{
+    transform: perspective(300px) scaleZ(2) rotateY(30deg);
+}
+</style>
